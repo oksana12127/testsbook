@@ -46,7 +46,7 @@ class NewVisitorTest(unittest.TestCase):
         inputbox.send_keys('Сделать мушку из павлиньих перьев')
         inputbox.send_keys(Keys.ENTER)
         time.sleep(1)
-        
+
         # Страница снова обновляется и теперь показывает оба элемента ее списка
         self.check_for_row_in_list_table('1: Купить павлиньи перья')
         self.check_for_row_in_list_table('2: Сделать мушку из павлиньих перьев')
