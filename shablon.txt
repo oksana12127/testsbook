@@ -1,0 +1,235 @@
+https://tutorial.djangogirls.org/ru/django_installation/    - установка джанги
+https://developer.mozilla.org/ru/docs/Learn/Server-side/Django/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5 - туториал по джанге
+https://developer.mozilla.org/ru/docs/Learn/Server-side/Django/Testing - туториал с проектом
+
+
+установка виртуаленв на Питоне 3:
+cd (папка с проектом)
+python3 -m venv (название папки для венв)
+source myvenv/bin/activate     - активация виртуалэнв, если папка с ВН называется myvenv
+pip install django==1.11.1 - установка джанго определенной версии
+django-admin.py startproject djangoshop - установка определенного проекта
+python manage.py runserver     - запуск сайта с проектом в браузере
+
+ctr + shift + f - по проекту
+ctrl + f - по файлу
+ctrl + клик - переходить по ф-циям
+
+регистрация на гит:
+oksana12127
+tulubtsos@gmail.com
+lubov2020@@
+
+
+
+
+
+https://github.com/oksana12127/my-first-blog.git    - адрес репозитория
+https://github.com/oksana12127/django_local_library.git
+
+регистрация на https://signup.heroku.com/
+tulubtsos@gmail.com
+lubov2020@@
+
+
+
+
+
+
+Регламент для выгрузки на Хероку:
+
+python manage.py collectstatic - сбор статики
+git add -A    - инициация коммитана гит
+git commit -m "...название коммита..."
+git push origin master
+git push heroku master
+
+при первом деплое:
+heroku run python manage.py migrate
+heroku run python manage.py createsuperuser
+
+
+
+pip freeze > requirements.txt    - -  обновление   requirements.txt
+pkj... - всегда удалять из requaments.txt
+psycopg2-binary - всегда добавлять в requaments.txt (psycopg2   =      pip install psycopg2-binary    (это для БД на сервере и локально))
+
+heroku logs --tail --app obscure-retreat-39881 - ошибки конкретного приложения, в данном случае obscure-retreat-39881 (берется на Хероку в настройках приложения)
+
+git rm -r --cached .idea (вместо .idea названия объекта для удаления с ГИТ)
+
+
+регистрация на https://www.pythonanywhere.com/
+oksana12127
+tulubtsos@gmail.com
+Lubov2019@
+
+
+логин админа на pythonanywhere: oksana
+password: 111
+
+
+https://www.youtube.com/playlist?list=PLlWXhlUMyooaDkd39pknA1-Olj54HtpjX    - дядька
+
+Если всё накрылось у дядьки:
+из дирректории dj вызываем командную строку
+source venv/bin/activate
+cd app/blogengine
+./manage.py runserver 5000
+
+./manage.py makemigrations - при создании новых объектов перенос в БД(миграции нельзя удалять из проекта)
+
+./manage.py migrate - миграция в джанго консоль
+./manage.py shell - открытые джанговской консоли
+p1 = Post.objects.create(title='new post2', slug='new-post2', body='body') - создание поста через консоль
+p.save() - сохранение в БД
+Post.objects.all() - покажет объект
+post = Post.objects.get(slug__iexact='New-slug') - регисторонезависимый поиск
+post = Post.objects.filter(slug__contains='new') - поиск по контенту
+
+суперюзер:
+имя  oksana
+адрес  tulubtsos@gmail.com
+пароль   111
+1111aaaa
+
+
+и-м на джанго 1.1:     https://www.youtube.com/watch?v=WBfKmwsu7eE&list=PLp_WN118C-VdgBKf_ATbvGI1xX06dZkmF&index=2
+суперюзер этого курса:
+имя  ksu
+адрес  tulubtsos@gmail.com
+пароль   2222aaaa
+
+
+tar -cvzf filename.tar.gz dj - сжатый архив, где filename имя архива, dj - архивируемая папка. Причем, мы в момент архивации находимся в директории с нужной папкой для архивации.
+
+после того, как скачен проект, активируем виртуальное окружение, после этого команда:
+pip install -r requirements.txt - установка всех библиотек из файла
+
+def __str__(self):
+    return self.domid
+это написать в models.py (вместо domid нужное поле)
+
+
+
+
+После того, как скачен проект с Гит:
+
+1) виртуально окр
+2) pip install -r requirements.txt
+3) если есть SQLlite, то делаем миграцию
+
+
+
+
+
+
+подтягиваем виртуальное окружение к каждому проекту: file   --    setting   --    prodject   --    prodject interpritator --  * add  -  выбрать из папки своего проектв из виртуального окружения из папки bin  версию питона (Питон 3)
+
+
+
+
+1) для лайков в модели комментов добавить поле "Инт". 
+2) к кнопке "лайк" добавить урл (передать ПК комментария)
+3) вью по ПК комментарий из БД к текущему значению +1, сохранить (сейф)
+4)нтмл - вместо числа вставить значение из БД	
+
+
+
+
+
+
+nyoblm4ikfri1zebnu6wojryr7nv1i2ke52swqhsjnibnmfg5du8li4sc     - sekret kay
+
+related_name='books' - связующая переменная между двумя классами
+
+
+отправть на гит оба проекта, Марине ссылку
+поставить в ИМ новое ВОкр и сделать pip install -r requirements.txt (находять в этом ВОкр)
+
+
+alt + Enter - add import
+
+регистрация в Яндекс:
+Оксана
+Т
+iksyusha121277
+lubov2019
+
+https://home.openweathermap.org/users/sign_up регистрация:
+Oksana
+jrcfyf77
+
+
+я каждого проекта настраиваем Пайчарм.
+В конфигурации - проект интерпритатор - затянуть виртуальное окружение
+
+
+
+
+
+https://gitlab.com/users/sign_up?invite_email=tulubtsos%40gmail.com
+
+Ksyusha12127
+Lubov2021
+
+как забрать изменения с ГИТ:
+Проверьте свою текущую ветвь с помощью команды:
+
+git branch
+
+Он покажет ваше текущее название ветку со звездочкой (*) рядом с именем.
+
+Затем обновите свою локальную ветвь с помощью удаленной ветви:
+
+git pull origin ______ (это имя ветви)
+
+
+Добавить на ГИТ:
+git add --all .
+git status
+git commit -m "название комита"
+git push origin ветка)
+
+
+
+
+bitcoin_db
+Ksyusha
+123
+
+
+
+методичка по терминалу:
+https://ubuntos.ru/ustanovka-i-ispolzovanie-guake-8211
+
+
+для работы с shell в классе должно быть прописано if __name__ == '__main__':
+							calculator = Calculator() (класс Calculator)
+    							calculator.sum(10) (значение аргумента функции sum равен 10
+shell:
+python manage.py shell
+from func import Calculator
+ctrl d - выход из shell
+
+python manage.py shell
+from func import Calculator
+calculator = Calculator()
+calculator.sum(10)
+
+
+
+
+postgres:
+sudo -u postgres psql
+/l - список баз данных
+\c bitcoin_db - зашли в конкретную базу данных bitcoin_db
+q - выйти
+\dt - список таблиц
+SELECT * FROM location_coinatmradarlocationdata; - вывести таблицу из папки location класс coinatmradarlocationdata
+
+
+
+
+
+
